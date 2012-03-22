@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+">
+    <bean id="topicoDia1" class="com.poolborges.example.spring.Topico">
+        <property name="topicoDia" value="Spring Injeção de dependencia"/>
+    </bean>
+    <bean id="topicoDia2" class="com.poolborges.example.spring.Topico">
+        <property name="topicoDia" value="Spring e JMS"/>
+    </bean>
+    <bean id="topicoDia3" class="com.poolborges.example.spring.Topico">
+        <property name="topicoDia" value="Spring, JMS, ActiveMQ"/>
+    </bean>
+
+</beans>

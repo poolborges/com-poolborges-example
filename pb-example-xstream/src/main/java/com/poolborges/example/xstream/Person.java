@@ -4,6 +4,9 @@
  */
 package com.poolborges.example.xstream;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 /**
  *
  * @author Borges
@@ -12,8 +15,9 @@ public class Person {
 
     private String firstname;
     private String lastname;
-    private PhoneNumber phone;
+    private PhoneNumber personalPhone;
     private PhoneNumber fax;
+    private Collection<PhoneNumber> phones = new ArrayList<PhoneNumber>();
     // ... constructors and methods
 
     public Person(String firstname, String lastname) {
@@ -21,10 +25,13 @@ public class Person {
         this.lastname = lastname;
     }
 
+    public void addGenericPhone(PhoneNumber ph){
+        this.phones.add(ph);
+    }
     public Person(String firstname, String lastname, PhoneNumber phone, PhoneNumber fax) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.phone = phone;
+        this.personalPhone = phone;
         this.fax = fax;
     }
     
@@ -55,11 +62,11 @@ public class Person {
     }
 
     public PhoneNumber getPhone() {
-        return phone;
+        return personalPhone;
     }
 
     public void setPhone(PhoneNumber phone) {
-        this.phone = phone;
+        this.personalPhone = phone;
     }
     
 }

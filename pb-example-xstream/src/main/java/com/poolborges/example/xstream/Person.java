@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.poolborges.example.xstream;
 
 import java.util.ArrayList;
@@ -25,17 +21,25 @@ public class Person {
         this.lastname = lastname;
     }
 
-    public void addGenericPhone(PhoneNumber ph){
+    public PhoneNumber getPersonalPhone() {
+        return personalPhone;
+    }
+
+    public Collection<PhoneNumber> getPhones() {
+        return phones;
+    }
+
+    
+    public void addGenericPhone(PhoneNumber ph) {
         this.phones.add(ph);
     }
+
     public Person(String firstname, String lastname, PhoneNumber phone, PhoneNumber fax) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.personalPhone = phone;
         this.fax = fax;
     }
-    
-    
 
     public PhoneNumber getFax() {
         return fax;
@@ -68,5 +72,4 @@ public class Person {
     public void setPhone(PhoneNumber phone) {
         this.personalPhone = phone;
     }
-    
 }

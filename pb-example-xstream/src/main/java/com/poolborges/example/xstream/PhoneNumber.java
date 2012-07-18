@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.poolborges.example.xstream;
 
 /**
@@ -12,15 +8,12 @@ public class PhoneNumber {
 
     private int code;
     private String number;
-    
-    // ... constructors and methods
 
     public PhoneNumber(int code, String number) {
         this.code = code;
         this.number = number;
     }
-    
-    
+
     public int getCode() {
         return code;
     }
@@ -36,5 +29,4 @@ public class PhoneNumber {
     public void setNumber(String number) {
         this.number = number;
     }
-    
 }

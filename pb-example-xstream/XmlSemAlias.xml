@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<com.poolborges.example.xstream.Blog>
+  <writer>
+    <name>Autor Apelido</name>
+  </writer>
+  <entries>
+    <com.poolborges.example.xstream.Entry>
+      <title>O primeiro</title>
+      <description>Esta é a primeira noticia do blog</description>
+    </com.poolborges.example.xstream.Entry>
+    <com.poolborges.example.xstream.Entry>
+      <title>O segundo</title>
+      <description>Esta é a segunda noticia do blog!</description>
+    </com.poolborges.example.xstream.Entry>
+  </entries>
+</com.poolborges.example.xstream.Blog>

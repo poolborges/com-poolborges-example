@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.poolborges.example.mvcdemo</groupId>
-    <artifactId>com.poolborges.example.mvcdemo</artifactId>
+    <artifactId>pb-example-mvcdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>com.poolborges.example.mvcdemo</name>
+    <name>pb-example-mvcdemo</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

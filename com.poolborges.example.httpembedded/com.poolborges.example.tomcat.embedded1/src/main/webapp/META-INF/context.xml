@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/com.poolborges.example.tomcat.embedded1">
+ 
+    <!--
+    <Resource name="jdbc/myDB" auth="Container" type="com.atomikos.jdbc.SimpleDataSourceBean" 
+              factory="org.apache.naming.factory.BeanFactory" 
+              uniqueResourceName="jdbc/myDB" 
+              xaDataSourceClassName="org.apache.derby.jdbc.EmbeddedXADataSource" 
+              exclusiveConnectionMode="true" 
+              connectionPoolSize="3" 
+              connectionTimeout="10" 
+              xaDataSourceProperties="databaseName=../work/users1;createDatabase=create"/> 
+    -->
+  
+    <!-- JNDI to access the MySql database 
+  <Resource name="jdbc/mkyongdb" auth="Container" type="javax.sql.DataSource" 
+              driverClassName="com.mysql.jdbc.Driver"
+              maxActive="50" maxIdle="30" maxWait="10000"
+              username="mysqluser" password="mysqlpassword"
+              url="jdbc:mysql://localhost:3306/mkyongdb" />
+    -->
+    <!-- JNDI to access the Derby(Embedded) database 
+  <Resource name="jdbc/devradar-ds" auth="Container" type="javax.sql.DataSource"
+              driverClassName="org.apache.derby.jdbc.EmbeddedDriver" 
+              maxActive="8" maxIdle="4"
+              username="devradar" password=""
+              url="jdbc:derby:devradar;create=true" />
+    -->
+    <!-- JNDI to access the Derby database 
+  <Resource name="jdbc/Sample" auth="Container" type="javax.sql.DataSource"
+              driverClassName="org.apache.derby.jdbc.ClientDriver" 
+              maxActive="8" maxIdle="4"
+              username="nbuser" password="nbuser"
+              url="jdbc:derby://localhost/Sample"/>    
+    -->
+    <!--
+     <Transaction factory="com.atomikos.icatch.jta.UserTransactionFactory" /> 
+    -->
+ 
+</Context> 

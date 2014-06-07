@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Context antiJARLocking="true" path="/com.poolborges.example.jpa.restfull"/ -->
+<Context>
+    <!-- Specify a JDBC datasource -->
+    <Resource name="CustomerService" type="javax.sql.DataSource" 
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+              url="jdbc:derby:EmployeeDB;create=true"
+              username="DB_USERNAME" password="DB_PASSWORD"
+              auth="Container" maxActive="10" maxIdle="4" />
+</Context>

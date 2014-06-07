@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+   
+    <persistence-unit name="CustomerService" transaction-type="JTA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <jta-data-source>CustomerService</jta-data-source>
+        <class>com.poolborges.example.jpa.restfull.Address</class>
+        <class>com.poolborges.example.jpa.restfull.Customer</class>
+        <class>com.poolborges.example.jpa.restfull.PhoneNumber</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:nome_base_hsqldb"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="eclipselink.target-database" value="HSQL"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.logging.level" value="FINEST"/>
+        </properties>
+    </persistence-unit>
+    <!-- HSQLDB IN-Memory -->
+    <persistence-unit name="JPA_HSQLDB-InMem" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>     
+        <class>com.poolborges.example.jpa.restfull.Address</class>
+        <class>com.poolborges.example.jpa.restfull.Customer</class>
+        <class>com.poolborges.example.jpa.restfull.PhoneNumber</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:nome_base_hsqldb"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="eclipselink.target-database" value="HSQL"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.logging.level" value="FINEST"/>
+        </properties>
+    </persistence-unit>
+</persistence>

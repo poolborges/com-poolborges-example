@@ -1,0 +1,32 @@
+<quartz>  
+    <job>  
+        <job-detail>  
+            <name>scheduler</name>  
+            <group>schedulers</group>  
+            <description>schedule a nightly job</description>  
+            <job-class>com.examples.quartz.Scheduler</job-class>  
+            <volatility>false</volatility>  
+            <durability>false</durability>  
+            <recover>false</recover>  
+            <job-data-map>  
+                <entry>  
+                    <key>username</key>  
+                    <value>someUser</value>  
+                </entry>  
+                <entry>  
+                    <key>password</key>  
+                    <value>somePassword</value>  
+                </entry>  
+            </job-data-map>  
+        </job-detail>  
+        <trigger>  
+            <cron>  
+                <name>scheduler-trigger</name>  
+                <group>scheduler-triggers</group>  
+                <job-name>scheduler</job-name>  
+                <job-group>schedulers</job-group>  
+                <cron-expression>0 0/5 * * * ?</cron-expression>  
+            </cron>  
+        </trigger>  
+    </job>  
+</quartz> 

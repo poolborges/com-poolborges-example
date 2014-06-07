@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.poolborges.example</groupId>
+    <artifactId>com.poolborges.example.microcontainer1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>com.poolborges.example.microcontainer1</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.jboss.microcontainer</groupId>
+            <artifactId>jboss-kernel</artifactId>
+            <version>2.0.10.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <type>jar</type>
+            <artifactId>jboss-common-core</artifactId>
+            <version>2.2.17.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.microcontainer</groupId>
+            <artifactId>jboss-dependency</artifactId>
+            <type>jar</type>
+            <version>2.0.10.GA</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-reflect</artifactId>
+            <type>jar</type>
+            <version>2.0.3.GA</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>jboss</groupId>
+            <artifactId>jboss-system</artifactId>
+            <version>4.2.2.GA</version>
+        </dependency>
+      
+    </dependencies>
+  
+    <repositories>
+        <repository>
+            <id>maven</id>
+            <name>Maven Repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jboss</id>
+            <name>JBoss Repository</name>
+            <url>http://repository.jboss.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jboss-snapshots</id>
+            <name>JBoss Snapshot Repository</name>
+            <url>http://snapshots.jboss.org/maven2</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jboss-public-repository-group</id>
+            <name>JBoss Public Maven Repository Group</name>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+    <pluginRepositories>
+        <pluginRepository> 
+            <id>repository.jboss.org</id> 
+            <url>http://repository.jboss.org</url> 
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots> 
+        </pluginRepository>
+        <pluginRepository> 
+            <id>snapshots.jboss.org</id> 
+            <url>http://snapshots.jboss.org</url> 
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots> 
+        </pluginRepository>
+    </pluginRepositories>
+</project>

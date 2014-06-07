@@ -1,0 +1,18 @@
+# Exemplo com JBoss Microcontainer
+
+Decidi aprofundar sobre OSGi(https://pt.wikipedia.org/wiki/OSGi) e passar a utiliza-lo no futuro, seja como for mantenho aqui o pouco de estudo que fiz sobre este  “Framework” usados na JBoss AS.
+
+# O que é JBoss Microcontainer
+Para saber mais Vai ler(1) 
+JBoss AS 7 usa algo agora chamado de "Modular Service Container ou JBoss-MSC"(2)
+
+# Evolução
+* JBoss JMX Microkernel 
+* JBoss Microcontainer (JBoss MC)
+* Jboss Modular Service Container (JBoss MSC)
+
+JBoss AS para futuras versões será chamada de WildFly (http://www.wildfly.org/)
+
+# Mais
+* (1) http://jbossmc.jboss.org/
+* (2) http://www.slideshare.net/rayploski/jboss-application-server-7

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="urn:jboss:bean-deployer:2.0 bean-deployer_2_0.xsd"
+            xmlns="urn:jboss:bean-deployer:2.0">
+
+   <bean name="myCar" class="cz.zizka.ondra.jbmctest.Car">
+     <property name="name">Red Devil</property>
+     <property name="litresOfFuel">37</property>
+   </bean>
+
+   <bean name="myGarage" class="cz.zizka.ondra.jbmctest.Garage">
+     <property name="myGarage"><inject bean="myCar"/></property>
+   </bean>
+
+</deployment>

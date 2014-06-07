@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:solr="http://www.springframework.org/schema/data/solr"
+       xsi:schemaLocation="http://www.springframework.org/schema/data/solr http://www.springframework.org/schema/data/solr/spring-solr-1.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <solr:repositories base-package="com.acme.repository" />
+    <solr:solr-server id="solrServer" url="http://localhost:8983/solr" />
+
+    <bean id="solrTemplate" class="org.springframework.data.solr.core.SolrTemplate">
+        <constructor-arg ref="solrServer" />
+    </bean>
+
+</beans>

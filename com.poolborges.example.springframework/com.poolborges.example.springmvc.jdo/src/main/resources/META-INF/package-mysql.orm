@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<orm xmlns="http://java.sun.com/xml/ns/jdo/orm"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/jdo/orm
+        http://java.sun.com/xml/ns/jdo/orm_3_0.xsd">
+    <package name="com.mkyong.model">
+
+        <class name="Customer" table="customer">
+            <field name="key">
+                <column name="customer_id" allows-null="false" />
+            </field>
+            <field name="name"><column name="customer_name"/></field>
+            <field name="email"><column name="customer_email"/></field>
+            <field name="date"><column name="customer_date"/></field>
+        </class>
+    </package>
+</orm>

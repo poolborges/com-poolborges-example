@@ -1,0 +1,2 @@
+# Providers of weather services 
+com.poolborges.example.spi.googleweatherprovider.GoogleWeatherProvider

@@ -4,3 +4,10 @@
 /com.poolborges.example.dropwizard/target/
 /com.poolborges.example.osgi/com.poolborges.example.osgi.calculador.texas/target/
 /com.poolborges.example.jsf22/target/
+/com.poolborges.example.httpembedded/com.poolborges.example.embeddedtomcat/target/
+/com.poolborges.example.httpembedded/com.poolborges.example.grizzly-jersey/target/
+/com.poolborges.example.httpembedded/com.poolborges.example.spark/target/
+/com.poolborges.example.httpembedded/com.poolborges.example.tomcat.embedded/target/
+/com.poolborges.example.httpembedded/com.poolborges.example.tomcat.embedded1/target/
+/com.poolborges.example.httpembedded/com.poolborges.example.undertow/target/
+/com.poolborges.example.jsf22/faces-config.NavData

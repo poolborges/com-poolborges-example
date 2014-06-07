@@ -1,5 +1,6 @@
 package com.poolborges.example;
 
+import com.poolborges.example.service.BlogService;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -23,14 +24,6 @@ public class App {
                     Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-        }, "JanusRestService").start();
-    }
-
-    class JanusRest implements Runnable {
-
-        @Override
-        public void run() {
-            throw new UnsupportedOperationException("Not supported yet."); 
-        }
+        }, "DropWizard Example").start();
     }
 }

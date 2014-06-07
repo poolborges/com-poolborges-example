@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.poolborges.example</groupId>
+        <artifactId>com.poolborges.example</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>com.poolborges.example.osgi</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>com.poolborges.example.osgi.calculador.texas</module>
+        <module>com.poolborges.example.osgi.calculator.api</module>
+        <module>com.poolborges.example.osgi.helloworld</module>
+        <module>com.poolborges.example.osgi.launcher</module>
+        <module>com.poolborges.example.osgi.repositoryservice</module>
+        <module>com.poolborges.example.osgi.rxtxecho</module>
+        <module>com.poolborges.example.osgi.vogella</module>
+    </modules>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>

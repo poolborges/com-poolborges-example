@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Meu App JSF 2.0</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGroup>
+                <h:panelGrid columns="2">
+                    <h:panelGroup id="menu">
+                        <h:panelGrid columns="1">
+                            <h:outputText value="Menu em JSF 2.0"/>
+                            <h:commandButton value="Home" action="index"/>
+                        </h:panelGrid>
+                    </h:panelGroup>
+                    <h:panelGroup id="conteudo">
+                        <h:outputText value="Alguns intens de form"/>
+                        <h:panelGrid columns="1">
+                            <h:outputLabel for="txSegredo" value="Label para o meu input segredo"/>
+                            <h:inputSecret id="txSegredo"/>
+
+                            <h:outputLabel for="txTexto" value="Label para o meu input de texto"/>
+                            <h:inputText id="txTexto"/>
+
+                            <h:outputLabel for="txArea" value="Label para o meu input de texto em area"/>
+                            <h:inputTextarea id="txArea"/>
+                        </h:panelGrid>
+                    </h:panelGroup>
+                </h:panelGrid>
+            </h:panelGroup>
+        </h:form>
+    </h:body>
+</html>

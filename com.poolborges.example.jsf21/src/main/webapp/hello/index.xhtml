@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:p="http://primefaces.org/ui">  
+ 
+ <h:head><title>example.jsf21</title></h:head>
+ <body>
+     <a href="/index.xhtml">Home</a>
+     <h:form>
+         <table>
+             <tr>
+                <td><h:outputLabel for="name" value="Name:" /></td>
+                <td><p:inputText id="name" value="#{helloMBean.name}"/></td>
+             </tr>
+             <tr>
+                <td><h:outputLabel for="message" value="Name:" /></td>
+                <td><p:inputText id="message" value="#{helloMBean.message}"/></td>
+             </tr>
+             <tr>
+                <td><p:commandButton id="submit" value="submit" action="#{helloMBean.submit}" ajax="false"/></td>
+                <td><p:commandButton id="reset" value="reset" action="#{helloMBean.reset}" ajax="false"/></td>
+             </tr>
+         </table>
+     </h:form>
+</body>
+</html>

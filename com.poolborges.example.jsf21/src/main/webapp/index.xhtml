@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>JSF </title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGroup>
+                <h:panelGrid columns="2">
+                    <h:panelGroup id="menu">
+                        <h:panelGrid columns="1">
+                            <h:outputText value="JSF 2.0"/>
+                            <h:commandButton value="Botao de Comando" action="pagina1"/>
+                            <h:commandLink value="Comando de link" action="pagina1"/>
+                            <h:commandLink value="LineChart" action="lineChart"/>
+                            <h:commandLink value="Time PieChart" action="timePieChart"/>
+                            <h:commandLink value="language List" action="languageList"/>
+                            <h:commandLink value="pieChartLive" action="pieChartLive"/>
+                            <h:commandLink value="Employee List" action="EmployeeList"/>
+                        </h:panelGrid>
+                    </h:panelGroup>
+                    <h:panelGroup id="conteudo">
+                        <h:graphicImage url="http://www.andreihirata.com.br/wp-content/uploads/2011/08/logoPrimeFaces.gif"/>
+                        <br/>
+                        <h:outputText value="Chato demais ficar escrevendo tudo em outputtext não é?!"/>
+                    </h:panelGroup>
+                </h:panelGrid>
+            </h:panelGroup>
+        </h:form>
+    </h:body>
+</html>

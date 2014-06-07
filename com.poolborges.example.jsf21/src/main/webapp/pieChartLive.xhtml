@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Gráficos com JSF 2.0</title>
+        <p:resources/>
+    </h:head>
+    <h:body>
+        <h:form id="livePieChartForm">
+            <p:poll interval="3" update="votes" />  
+            <p:pieChart id="votes" value="#{PieChartLiveBean.livePieModel}" title="Live Chart"  
+                legendPosition="nw" style="width:400px; height:300px"  />
+        </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>JSF Employee List</title>
+    </h:head>
+    <h:body>
+        <h:form prependId="false">
+            <p:dataTable value="#{employeeBean.employees}" var="emp">
+                <f:facet name="header">
+                    <h:outputText value="Employees" />
+                </f:facet>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Id" />
+                    </f:facet>
+                    <h:outputText value="#{emp.id}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Name" />
+                    </f:facet>
+                    <h:outputText value="#{emp.name}" />
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Depart" />
+                    </f:facet>
+                    <h:outputText value="#{emp.dept}" />
+                </p:column>
+            </p:dataTable>
+        </h:form>
+    </h:body>
+</html>

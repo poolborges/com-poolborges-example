@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-map xmlns="http://cayenne.apache.org/schema/3.0/modelMap"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://cayenne.apache.org/schema/3.0/modelMap http://cayenne.apache.org/schema/3.0/modelMap.xsd"
+	 project-version="6">
+	<property name="defaultPackage" value="com.poolborges.example.cayenne.persistence"/>
+	<db-entity name="artist">
+		<db-attribute name="date_of_birth" type="DATE"/>
+		<db-attribute name="id" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" length="200"/>
+	</db-entity>
+	<db-entity name="gallery">
+		<db-attribute name="id" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" length="200"/>
+	</db-entity>
+	<db-entity name="painting">
+		<db-attribute name="artist_id" type="INTEGER"/>
+		<db-attribute name="gallery_id" type="INTEGER"/>
+		<db-attribute name="id" type="INTEGER" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" length="200"/>
+	</db-entity>
+	<obj-entity name="Artist" className="com.poolborges.example.cayenne.persistence.Artist" dbEntityName="artist">
+		<obj-attribute name="dateOfBirth" type="java.util.Date" db-attribute-path="date_of_birth"/>
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+	</obj-entity>
+	<obj-entity name="Gallery" className="com.poolborges.example.cayenne.persistence.Gallery" dbEntityName="gallery">
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+	</obj-entity>
+	<obj-entity name="Painting" className="com.poolborges.example.cayenne.persistence.Painting" dbEntityName="painting">
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+	</obj-entity>
+	<db-relationship name="paintings" source="artist" target="painting" toMany="true">
+		<db-attribute-pair source="id" target="artist_id"/>
+	</db-relationship>
+	<db-relationship name="paintings" source="gallery" target="painting" toMany="true">
+		<db-attribute-pair source="id" target="gallery_id"/>
+	</db-relationship>
+	<db-relationship name="artist" source="painting" target="artist" toMany="false">
+		<db-attribute-pair source="artist_id" target="id"/>
+	</db-relationship>
+	<db-relationship name="gallery" source="painting" target="gallery" toMany="false">
+		<db-attribute-pair source="gallery_id" target="id"/>
+	</db-relationship>
+	<obj-relationship name="paintings" source="Artist" target="Painting" deleteRule="Deny" db-relationship-path="paintings"/>
+	<obj-relationship name="paintings" source="Gallery" target="Painting" deleteRule="Deny" db-relationship-path="paintings"/>
+	<obj-relationship name="artist" source="Painting" target="Artist" deleteRule="Deny" db-relationship-path="artist"/>
+	<obj-relationship name="gallery" source="Painting" target="Gallery" deleteRule="Deny" db-relationship-path="gallery"/>
+</data-map>

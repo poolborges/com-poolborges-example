@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+    <id>123</id>
+    <first-name>Jane</first-name>
+    <last-name>Doe</last-name>
+    <address>
+        <street>123 A Street</street>
+    </address>
+    <phone-number type="work">555-1111</phone-number>
+    <phone-number type="cell">555-2222</phone-number>
+</customer>

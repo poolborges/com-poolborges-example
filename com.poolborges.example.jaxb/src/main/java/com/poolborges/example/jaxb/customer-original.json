@@ -1,0 +1,20 @@
+{
+   "customer": {
+      "id": 123,
+      "first-name": "Jane",
+      "last-name": "Doe",
+      "address": {
+         "street": "123 A Street"
+      },
+      "phone-number": [
+         {
+            "@type": "work",
+            "$": "555-1111"
+         },
+         {
+            "@type": "cell",
+            "$": "555-2222"
+         }
+      ]
+   }
+}

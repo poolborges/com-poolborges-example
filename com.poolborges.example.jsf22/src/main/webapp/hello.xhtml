@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
-<f:loadBundle basename="application" var="msg"/>
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <f:loadBundle basename="application" var="msg"/>
 
-<head>
-    <title><h:outputText value="#{msg.welcomeTitle}" /></title>
-</head>
-<h:body>
- <h3><h:outputText value="#{msg.helloHeading}" />&nbsp;#{helloWorldBean.firstName}&nbsp;#{helloWorldBean.lastName}</h3>
-<p><h:outputText value="#{msg.helloMessage}" /></p>
-</h:body>
+    <head jsf:id="head">
+        <title><h:outputText value="#{msg.welcomeTitle}" /></title>
+    </head>
+
+    <body jsf:id="body">
+        <h3><h:outputText value="#{msg.helloHeading}" /></h3>
+        <p><h:outputText value="#{helloWorldBean.firstName} #{helloWorldBean.lastName}" /></p>
+        <p><h:outputText value="#{msg.helloMessage}" /></p>
+    </body>
 </html>

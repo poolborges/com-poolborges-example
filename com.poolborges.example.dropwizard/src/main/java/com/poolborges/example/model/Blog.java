@@ -1,4 +1,4 @@
-package com.poolborges.example;
+package com.poolborges.example.model;
 
 import java.util.Date;
 import java.util.UUID;

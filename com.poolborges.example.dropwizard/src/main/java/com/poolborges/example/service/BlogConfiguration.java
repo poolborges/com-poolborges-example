@@ -1,4 +1,4 @@
-package com.poolborges.example;
+package com.poolborges.example.service;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,5 +11,17 @@ public class BlogConfiguration extends Configuration{
     @Min(1)
     @Max(65535)
     @JsonProperty
-    private int port = 5672;
+    private final int port = 5672;
+    
+    //@NotEmpty
+    @JsonProperty
+    private String host;
+    
+    public String getHost() {
+        return host;
+    }
+
+    public int getPort() {
+        return port;
+    }
 }

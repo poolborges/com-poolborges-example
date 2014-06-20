@@ -1,4 +1,4 @@
-package repository;
+package com.poolborges.example.osgi.repository;
 
 
 public interface RepositoryService {

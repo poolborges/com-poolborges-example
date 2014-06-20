@@ -10,10 +10,7 @@
     <version>1.0.0</version>
     <packaging>pom</packaging>
     <modules>
-        <module>com.poolborges.example.osgi.calculador.texas</module>
-        <module>com.poolborges.example.osgi.calculator.api</module>
         <module>com.poolborges.example.osgi.helloworld</module>
-        <module>com.poolborges.example.osgi.launcher</module>
         <module>com.poolborges.example.osgi.repositoryservice</module>
         <module>com.poolborges.example.osgi.rxtxecho</module>
         <module>com.poolborges.example.osgi.vogella</module>

@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.poolborges.example.osgi</groupId>
+    <artifactId>com.poolborges.example.osgi.calculator.consumer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+    <name>PBExample OSGI :: Calculator Consumer</name>  
+    <description>
+        This bundle consume Poolborges Calculator service.
+    </description>
+    
+    <organization>
+        <name>PBorges</name>
+        <url>poolborges.wordpress.com</url>
+    </organization>
+    <developers>
+        <developer>
+            <email>poolborges@...com</email>
+            <name>Paulo Borges</name>
+            <id>poolborges</id>
+        </developer>
+    </developers>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>4.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.poolborges.example.osgi</groupId>
+            <artifactId>com.poolborges.example.osgi.calculator.api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.4.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-Vendor>Poolborges</Bundle-Vendor>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Activator>com.poolborges.example.osgi.calculator.consumer.Activator</Bundle-Activator> <!-- -->
+                        <Service-Component>OSGI-INF/component.xml</Service-Component>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

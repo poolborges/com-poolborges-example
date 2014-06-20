@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component name="CalculatorConsumer"
+               xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0"
+               xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://www.osgi.org/xmlns/scr/v1.0.0 http://www.osgi.org/xmlns/scr/v1.0.0/scr.xsd ">
+    
+    <implementation class="com.poolborges.example.osgi.calculator.consumer.CalculatorConsumer"/>
+
+    <reference name="CalculatorService" interface="com.poolborges.example.osgi.calculator.api.Calculator" 
+               cardinality="0..1" policy="dynamic" bind="bindCalculator" unbind="unbindCalculator"/>
+    
+</scr:component> 

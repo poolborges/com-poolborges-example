@@ -1,4 +1,34 @@
-# Exemplos
+# About this Project
 
-Este projecto contém apenas codigos de exemplo, demo,...
-Uso este projecto apenas para testar ou apreender "coisas" normalmente aqui em Java
+
+# Compile
+-Pbuild-for-felix install
+
+# Execute this project
+
+java -jar bin/felix.jar 
+
+
+
+# Some Felix,Gogo Commands
+
+etc/gosh_profile
+SCOPE = gogo:*
+
+bundle
+(bundle 1) location
+(bundle 5) start
+
+g! help
+equinox:help
+felix:help
+
+Listing installed bundles: lb
+
+refresh 11
+
+update
+
+install file:modules/com.poolborges.example.osgi.calculator.texas-1.0-SNAPSHOT.jar
+
+g! gosh: stopping framework

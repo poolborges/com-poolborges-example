@@ -11,3 +11,15 @@
 /com.poolborges.example.httpembedded/com.poolborges.example.tomcat.embedded1/target/
 /com.poolborges.example.httpembedded/com.poolborges.example.undertow/target/
 /com.poolborges.example.jsf22/faces-config.NavData
+/com.poolborges.example.osgi/com.poolborges.example.osgi.helloworld/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.calculator.api/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.calculator.dist/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.calculator.consumer/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.launcher/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.rxtxecho/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.repositoryservice/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.vogella/de.vogella.osgi.quote.ds/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.vogella/de.vogella.osgi.quote/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.vogella/de.vogella.osgi.quoteconsumer/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.vogella/de.vogella.osgi.quote.random/target/
+/com.poolborges.example.osgi/com.poolborges.example.osgi.calculador/com.poolborges.example.osgi.calculator.dist/target/

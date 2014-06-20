@@ -1,15 +1,20 @@
-# Examplo comunicação com Porta Serial em Java
+# Exemplo comunicação com Porta Serial em Java
 
-Utilizo NRJavaSerial, pois jav traz dentro do jar o codigo nativo
-
+Utilizo NRJavaSerial, pois ja traz a biblioteca nativa.
 
 ## Biblioteca RxTx
+* Biblioteca original
 
-## Biblioteca NRJavaSerial (RxTx Wrapper)
+## Biblioteca NRJavaSerial (RxTx Wrapper) 
+* inclui biblioteca nativa
+
+## Biblioteca rxtx-rebundled (RxTx Wrapper) 
+* inclui biblioteca nativa
 
 NRJavaSerial is actually a fork of the RXTX library that aims to make it easier to use and allow developers to embed other libraries. 
 
 # Mais
 
-* https://github.com/NeuronRobotics/nrjavaserial
 * https://github.com/rxtx
+* https://github.com/NeuronRobotics/nrjavaserial
+* http://dev.root1.de/projects/rxtx-rebundled

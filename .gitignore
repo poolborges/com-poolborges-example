@@ -23,3 +23,7 @@
 /com.poolborges.example.osgi/com.poolborges.example.osgi.vogella/de.vogella.osgi.quoteconsumer/target/
 /com.poolborges.example.osgi/com.poolborges.example.osgi.vogella/de.vogella.osgi.quote.random/target/
 /com.poolborges.example.osgi/com.poolborges.example.osgi.calculador/com.poolborges.example.osgi.calculator.dist/target/
+/com.poolborges.example.osgi.calculador/com.poolborges.example.osgi.calculador.texas/target/
+/com.poolborges.example.osgi.calculador/com.poolborges.example.osgi.calculator.api/target/
+/com.poolborges.example.osgi.calculador/com.poolborges.example.osgi.calculator.consumer/target/
+/com.poolborges.example.osgi.calculador/com.poolborges.example.osgi.calculator.dist/target/

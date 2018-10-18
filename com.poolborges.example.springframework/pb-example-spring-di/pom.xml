@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.poolborges.example</groupId>
-  <artifactId>com.poolborges.example.spring4</artifactId>
+  <artifactId>pb-example-spring-di</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>com.poolborges.example.spring4</name>
+  <name>pb-example-spring-di</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -22,11 +22,20 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    
     <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>[4.3.17,)</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
     </dependency>
   </dependencies>
 </project>

@@ -2,12 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.poolborges.example</groupId>
-    <artifactId>com.poolborges.example.springmvc.twitterbootstrap</artifactId>
+    <groupId>com.poolborges.example.mvcdemo</groupId>
+    <artifactId>pb-example-mvcdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>com.poolborges.example.springmvc.twitterbootstrap</name>
+    <name>pb-example-mvcdemo</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -23,34 +23,30 @@
             <scope>provided</scope>
         </dependency>
         
-        <!-- View Dependencies -->
-                <!-- JSTL library -->
-        <!-- http://www.murraywilliams.com/2011/11/running-jstl-1-2-on-tomcat-7-using-maven/ -->
-        <dependency><!-- API -->
+        <!-- servlet,taglibs,jstl,jsp -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
-        <dependency><!-- runtime libraries --> 
-            <groupId>org.glassfish.web</groupId> 
-            <artifactId>jstl-impl</artifactId> 
-            <version>1.2</version> 
-            <exclusions>
-                <exclusion>
-                    <artifactId>servlet-api</artifactId>
-                    <groupId>javax.servlet</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>jsp-api</artifactId>
-                    <groupId>javax.servlet.jsp</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>jstl-api</artifactId>
-                    <groupId>javax.servlet.jsp.jstl</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        
         
         <!-- Spring 3 dependencies -->
         <dependency>
@@ -118,15 +114,6 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>maven-jetty-plugin</artifactId>
-                <version>7.0.0.pre5</version>
-                <configuration>
-                    <war>${basedir}/target/${artifactId}${version}.war</war>
-                    <scanIntervalSeconds>10</scanIntervalSeconds>
-                </configuration>
             </plugin>
         </plugins>
     </build>

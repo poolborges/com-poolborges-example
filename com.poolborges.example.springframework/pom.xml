@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.poolborges.example</groupId>
+    <artifactId>com.poolborges.example.springframework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>com.poolborges.example.springframework</name>
+
+
+    <modules>
+        <module>com.poolborges.example.spring</module>
+        <module>com.poolborges.example.spring4</module>
+        <module>com.poolborges.example.springboot050</module>
+        <module>com.poolborges.example.springdata</module>
+        <module>com.poolborges.example.springjpa.employee</module>
+        <module>com.poolborges.example.springmef</module>
+        <module>com.poolborges.example.springmvc</module>
+        <module>com.poolborges.example.springmvc.i18n</module>
+        <module>com.poolborges.example.springmvc.jdo</module>
+        <module>com.poolborges.example.springmvc.twitterbootstrap</module>
+        <module>com.poolborges.example.springscheduler</module>
+        <module>pb-example-mvcdemo</module>
+        <module>pb-example-spring-di</module>
+    </modules>
+</project>

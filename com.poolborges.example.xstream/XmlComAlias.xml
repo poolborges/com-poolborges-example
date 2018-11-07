@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<jornal>
+  <writer>
+    <name>Autor Apelido</name>
+  </writer>
+  <noticia>
+    <title>O primeiro</title>
+    <description>Esta é a primeira noticia do blog</description>
+  </noticia>
+  <noticia>
+    <title>O segundo</title>
+    <description>Esta é a segunda noticia do blog!</description>
+  </noticia>
+</jornal>
